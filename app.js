@@ -47,3 +47,10 @@ button.addEventListener('click', () => {
 
     section.classList.toggle('invisible');
 });
+
+// creating element and adding content to it:
+const list = document.querySelector('ul');
+const newLi = document.createElement('li');
+
+newLi.textContent = 'Item 4';
+list.prepend(newLi);
